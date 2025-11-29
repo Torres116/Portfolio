@@ -3,7 +3,7 @@
 import {motion} from 'framer-motion'
 import Image from "next/image";
 import Link from "next/link";
-import {SkillTag, SkillTagProps} from "@/SkillTag";
+import {SkillTag} from "@/SkillTag";
 import {ProjectCard, ProjectCardProps} from "@/ProjectCard";
 import {EducationCard, EducationCardProps} from "@/EducationCard";
 
@@ -123,7 +123,7 @@ export default function Home() {
                     >
 
                         <p className={'text-xl xl:text-2xl font-semibold text-center text-darkblue'}>
-                            Computer Science student | Software Developer
+                            Software Developer
                         </p>
 
                         <div className={"flex flex-row flex-wrap justify-center mt-3  gap-4 py-2"}>
