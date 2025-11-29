@@ -71,7 +71,7 @@ export default function Home() {
         codeLink: "https://github.com/Torres116/CSharp2Typescript"
     }
 
-    const projects: ProjectCardProps[] = [eCommerceProject, csharpTypescriptConverter];
+    const projects: ProjectCardProps[] = [csharpTypescriptConverter,eCommerceProject];
 
     // Education Section
     const bachelor: EducationCardProps = {
