@@ -19,8 +19,7 @@ export default function Home() {
         {title: "Git", image: "/skills/git.svg"},
         {title: "Docker", image: "/skills/docker.svg"},
         {title: "SQL Server", image: "/skills/sqlserver.svg"},
-        {title: "Postgres admin", image: "/skills/pgadmin.svg"},
-        {title: "MongoDB", image: "/skills/mongodb.svg"},
+        {title: "pg admin", image: "/skills/pgadmin.svg"},
         {title: "Postman", image: "/skills/postman.svg"},
         {title: ".NET Framework", image: "/skills/netframework.svg"},
         {title: ".NET Core", image: "/skills/netcore.svg"},
@@ -46,7 +45,7 @@ export default function Home() {
                 {title: "Typescript", image: "/skills/typescript.svg"},
                 {title: "C#", image: "/skills/csharp.svg"},
                 {title: "React", image: "/skills/react.svg"},
-                {title: "Postgres Admin", image: "/skills/pgadmin.svg"},
+                {title: "pg admin", image: "/skills/pgadmin.svg"},
                 {title: "Supabase", image: "/skills/supabase.svg"},
                 {title: "React Query", image: "/skills/reactquery.svg"},
                 {title: "Tailwind", image: "/skills/tailwind.svg"},
@@ -58,7 +57,7 @@ export default function Home() {
     }
 
     const csharpTypescriptConverter: ProjectCardProps = {
-        title: "C# to Typescript data model converter",
+        title: "C# to Typescript DTO converter",
         description: "Developed a .NET tool that converts C# data models into TypeScript, " +
             "definitons while enabling type-safe shared models between backend and frontend.",
         tags: [
@@ -68,10 +67,11 @@ export default function Home() {
             {title: "Typescript", image: "/skills/typescript.svg"},
             {title: "HTML", image: "/skills/html.svg"}
         ],
-        codeLink: "https://github.com/Torres116/CSharp2Typescript"
+        codeLink: "https://github.com/Torres116/CSharp2Typescript",
+        demoLink: "https://torres116.github.io/CSharpTypescriptDTOConverter/"
     }
 
-    const projects: ProjectCardProps[] = [csharpTypescriptConverter,eCommerceProject];
+    const projects: ProjectCardProps[] = [csharpTypescriptConverter, eCommerceProject];
 
     // Education Section
     const bachelor: EducationCardProps = {
@@ -123,22 +123,22 @@ export default function Home() {
                     >
 
                         <p className={'text-xl xl:text-2xl font-semibold text-center text-darkblue'}>
-                            Software Developer
+                            Backend Engineer
                         </p>
 
                         <div className={"flex flex-row flex-wrap justify-center mt-3  gap-4 py-2"}>
 
                             <a href={"#skills"}
-                                className={"flex items-center justify-center bg-brown rounded-lg cursor-pointer " +
-                                    "font-medium text-2xl text-white font-figtree h-[45px] w-[150px] " +
-                                    "hover:opacity-70 duration-300 transform-opacity"}>
+                               className={"flex items-center justify-center bg-brown rounded-lg cursor-pointer " +
+                                   "font-medium text-2xl text-white font-figtree h-[45px] w-[150px] " +
+                                   "hover:opacity-70 duration-300 transform-opacity"}>
                                 Skills
                             </a>
 
                             <a href={"#contact"}
-                                className={"flex items-center justify-center h-[45px] w-[150px] py-2 px-4 cursor-pointer " +
-                                    "border-2 border-brown rounded-lg font-medium text-2xl text-brown font-figtree " +
-                                    "hover:opacity-70 duration-300 transform-opacity"}>
+                               className={"flex items-center justify-center h-[45px] w-[150px] py-2 px-4 cursor-pointer " +
+                                   "border-2 border-brown rounded-lg font-medium text-2xl text-brown font-figtree " +
+                                   "hover:opacity-70 duration-300 transform-opacity"}>
                                 Contact
                             </a>
 
@@ -266,7 +266,9 @@ export default function Home() {
                                     Languages
                                 </p>
 
-                                <div className={"flex flex-row flex-wrap justify-center space-x-4 gap-y-1 pb-20"}>
+                                <div
+                                    className={"md:flex md:flex-row flex-wrap grid grid-cols-2 grid-flow-row" +
+                                        " justify-center space-x-4 gap-y-1 pb-20"}>
                                     {
                                         languages &&
                                         languages.map((val, idx) => (
@@ -303,12 +305,12 @@ export default function Home() {
                         transition={{duration: 2, delay: 1}}
                     >
 
-                        <div className={"flex flex-row flex-wrap justify-center space-x-4 gap-y-1 py-1"}>
+                        <div className={"flex flex-row flex-wrap justify-center gap-y-1 py-1"}>
                             {
                                 projects &&
                                 projects.map((val, idx) => (
                                     <ProjectCard title={val.title} description={val.description} tags={val.tags}
-                                                 key={idx} codeLink={val.codeLink}/>
+                                                 key={idx} codeLink={val.codeLink} demoLink={val.demoLink}/>
                                 ))
                             }
                         </div>
@@ -331,7 +333,7 @@ export default function Home() {
                     </h2>
 
                     <motion.div
-                        className="flex flex-col justify-center space-y-2"
+                        className="flex flex-col justify-center mt-6 space-y-2"
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{once: true, amount: 0.3}}
@@ -392,8 +394,8 @@ export default function Home() {
                         <div className={"flex flex-row items-center gap-4 "}>
                             <Image src={"/email_icon.svg"} width={36} height={36} alt={"email icon"}/>
                             <a target={"_blank"} rel={"noreferrer noopener"} href="mailto:medinact111@gmail.com"
-                                  className={"text-lg font-semibold font-figtree underline " +
-                                      "hover:opacity-50 duration-300 transform-opacity"}>medinact111@gmail.com</a>
+                               className={"text-lg font-semibold font-figtree underline " +
+                                   "hover:opacity-50 duration-300 transform-opacity"}>medinact111@gmail.com</a>
                         </div>
 
                         <p className={'text-xl font-semibold text-center font-figtree text-pretty '}>
@@ -402,7 +404,7 @@ export default function Home() {
 
                         <a className={"flex flex-row gap-2 place-self-center font-bold text-xl bg-transparent font-figtree " +
                             "hover:opacity-70 duration-300 transform-origin-center cursor-pointer"}
-                            href={"/João_Torres_CV.pdf"} download>
+                           href={"/João_Torres_CV.pdf"} download>
                             Download CV
                             <Image src={"/download.svg"} width={24} height={24} alt={"download icon"}/>
                         </a>

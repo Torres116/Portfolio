@@ -20,7 +20,7 @@ export const SkillTag = ({title, bgTransparent = false, image, imageAlt}: SkillT
                     : "bg-darkblue text-white"
             }
               rounded-lg flex items-center justify-center p-2 text-center text-xl font-semibold
-              font-figtree h-[40px] lg:w-[190px] shadow-sm pointer-none font-figtree
+              font-figtree h-[40px] w-[135px] md:w-[190px] shadow-sm pointer-none font-figtree
     
               opacity-100 ${image ? "group-hover:opacity-0" : ""} 
               transition-opacity duration-500 ease-in-out`}>
