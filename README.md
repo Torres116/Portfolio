@@ -12,4 +12,4 @@ Showcases my projects, skills, education and experience as a software developer.
 	•	Vercel Hosting
 
 
-## 🔗 https://joaotorres.vercel.app/
+🔗 https://joaotorres.vercel.app/
