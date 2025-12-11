@@ -9,6 +9,12 @@ import {EducationCard, EducationCardProps} from "@/EducationCard";
 
 export default function Home() {
 
+    //Links
+    const githubLink = "https://github.com/Torres116";
+    const linkedinLink = "https://www.linkedin.com/in/joao-carlos-torres/";
+    const emailLink = "mailto:medinact111@gmail.com";
+    const cvLink = "/João_Torres_CV.pdf";
+
     // Skills Section
     const skills = [
         {title: "C#", image: "/skills/csharp.svg"},
@@ -91,10 +97,10 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto flex justify-center md:justify-between items-center px-6 py-4 h-16">
                     <h1 className="hidden lg:flex lg:text-2xl font-bold">João Torres</h1>
                     <nav className="space-x-6 text-sm lg:text-lg  font-semibold font-figtree">
-                        <a href="#skills" className="hover:text-brown">Skills</a>
-                        <a href="#projects" className="hover:text-brown">Projects</a>
-                        <a href="#education" className="hover:text-brown">Education</a>
-                        <a href="#contact" className="hover:text-brown">Contact</a>
+                        <a href={"#skills"} className="hover:text-brown">Skills</a>
+                        <a href={"#projects"} className="hover:text-brown">Projects</a>
+                        <a href={"#education"} className="hover:text-brown">Education</a>
+                        <a href={"#contact"} className="hover:text-brown">Contact</a>
                     </nav>
                 </div>
             </header>
@@ -146,20 +152,25 @@ export default function Home() {
 
                         <div className={"flex flex-row flex-wrap justify-center mt-3 space-x-6"}>
 
-                            <Link href={"https://github.com/Torres116"} target={"_blank"} rel={"noreferrer noopener"}
+                            <Link href={githubLink} target={"_blank"} rel={"noreferrer noopener"}
                                   className={"hover:opacity-50 hover:scale-125 duration-300 transform"}>
                                 <Image src={"/github_logo.svg"} width={36} height={36} alt={"github logo"}/>
                             </Link>
 
-                            <Link href={"https://www.linkedin.com/in/joao-carlos-torres/"} target={"_blank"}
+                            <Link href={linkedinLink} target={"_blank"}
                                   rel={"noreferrer noopener"}
                                   className={"hover:opacity-50 hover:scale-125 duration-300 transform"}>
                                 <Image src={"/linkedin_logo.svg"} width={36} height={36} alt={"linkedin logo"}/>
                             </Link>
 
-                            <Link href={"mailto:medinact111@gmail.com"} target={"_blank"} rel={"noreferrer noopener"}
+                            <Link href={emailLink} target={"_blank"} rel={"noreferrer noopener"}
                                   className={"hover:opacity-50 hover:scale-125 duration-300 transform"}>
                                 <Image src={"/email_icon.svg"} width={36} height={36} alt={"email logo"}/>
+                            </Link>
+
+                            <Link href={cvLink} target={"_blank"} rel={"noreferrer noopener"} download
+                                  className={"hover:opacity-50 hover:scale-125 duration-300 transform"}>
+                                <Image src={"/cv_icon.svg"} width={36} height={36} alt={"email logo"}/>
                             </Link>
 
                         </div>
@@ -378,14 +389,14 @@ export default function Home() {
 
                         <div className={"flex flex-row items-center gap-4 "}>
                             <Image src={"/github_logo.svg"} width={36} height={36} alt={"github logo"}/>
-                            <Link href={"https://github.com/Torres116"} target={"_blank"} rel={"noreferrer noopener"}
+                            <Link href={githubLink} target={"_blank"} rel={"noreferrer noopener"}
                                   className={"text-lg font-semibold font-figtree underline " +
                                       "hover:opacity-50 duration-300 transform-opacity"}>https://github.com/Torres116</Link>
                         </div>
 
                         <div className={"flex flex-row items-center gap-4 "}>
                             <Image src={"/linkedin_logo.svg"} width={36} height={36} alt={"linkedin logo"}/>
-                            <Link href={"https://www.linkedin.com/in/joao-carlos-torres/"} target={"_blank"}
+                            <Link href={linkedinLink} target={"_blank"}
                                   rel={"noreferrer noopener"}
                                   className={"text-lg font-semibold font-figtree underline " +
                                       "hover:opacity-50 duration-300 transform-opacity"}>https://www.linkedin.com/in/joao-carlos-torres/</Link>
@@ -393,7 +404,7 @@ export default function Home() {
 
                         <div className={"flex flex-row items-center gap-4 "}>
                             <Image src={"/email_icon.svg"} width={36} height={36} alt={"email icon"}/>
-                            <a target={"_blank"} rel={"noreferrer noopener"} href="mailto:medinact111@gmail.com"
+                            <a target={"_blank"} rel={"noreferrer noopener"} href={emailLink}
                                className={"text-lg font-semibold font-figtree underline " +
                                    "hover:opacity-50 duration-300 transform-opacity"}>medinact111@gmail.com</a>
                         </div>
