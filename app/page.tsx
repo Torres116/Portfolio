@@ -20,12 +20,9 @@ export default function Home() {
         {title: "C#", image: "/skills/csharp.svg"},
         {title: "Typescript", image: "/skills/typescript.svg"},
         {title: "Javascript", image: "/skills/javascript.svg"},
-        {title: "Golang", image: "/skills/golang.svg"},
         {title: "SQL", image: "/skills/postgresql.svg"},
         {title: "Git", image: "/skills/git.svg"},
         {title: "Docker", image: "/skills/docker.svg"},
-        {title: "SQL Server", image: "/skills/sqlserver.svg"},
-        {title: "pg admin", image: "/skills/pgadmin.svg"},
         {title: "Postman", image: "/skills/postman.svg"},
         {title: ".NET Framework", image: "/skills/netframework.svg"},
         {title: ".NET Core", image: "/skills/netcore.svg"},
@@ -37,7 +34,6 @@ export default function Home() {
         {title: "C#", image: "/skills/csharp.svg"},
         {title: "Typescript", image: "/skills/typescript.svg"},
         {title: "Javascript", image: "/skills/javascript.svg"},
-        {title: "Golang", image: "/skills/golang.svg"},
         {title: "SQL", image: "/skills/postgresql.svg"}
     ];
 
